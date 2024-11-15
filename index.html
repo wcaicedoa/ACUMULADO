@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Casino - GRAN ACUMULADO</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="main-container">
+    <!-- Título principal -->
+    <h1 class="main-title">GRAN ACUMULADO</h1>
+
+    <!-- Rectángulo para la suma total de los créditos -->
+    <div class="total-credits-container">
+      <span>Total Acumulado:</span>
+      <div id="total-credits" class="total-credits">0</div>
+    </div>
+
+    <div class="container">
+      <!-- Tarjeta para ESP32 Número 1 -->
+      <div class="card" id="card-esp32-1">
+        <div class="card-header">
+          <h2>Luxury Casino - ESP32 #1</h2>
+          <span id="connection-status-1" class="badge disconnected">Disconnected</span>
+        </div>
+        <div class="card-content">
+          <h3>Your Credits</h3>
+          <div id="credits-1" class="credits">0</div>
+          <div id="animation-1" class="animation hidden">&#36;</div>
+        </div>
+        <div class="games">
+          <div class="game">Game 1</div>
+          <div class="game">Game 2</div>
+          <div class="game">Game 3</div>
+        </div>
+      </div>
+
+      <!-- Tarjeta para ESP32 Número 2 -->
+      <div class="card" id="card-esp32-2">
+        <div class="card-header">
+          <h2>Luxury Casino - ESP32 #2</h2>
+          <span id="connection-status-2" class="badge disconnected">Disconnected</span>
+        </div>
+        <div class="card-content">
+          <h3>Your Credits</h3>
+          <div id="credits-2" class="credits">0</div>
+          <div id="animation-2" class="animation hidden">&#36;</div>
+        </div>
+        <div class="games">
+          <div class="game">Game 1</div>
+          <div class="game">Game 2</div>
+          <div class="game">Game 3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenedor para el mensaje de ganador -->
+  <div id="winner-message" class="winner-message hidden">
+    <h1 id="winner-text"></h1>
+    <h2 id="prize-text"></h2>
+  </div>
+
+  <!-- Reproductor de sonido para el premio -->
+  <audio id="win-sound" src="win-sound.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+/* Estilos globales */
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #4a148c, #b71c1c, #fdd835);
+}
+
+.main-container {
+  text-align: center;
+}
+
+.main-title {
+  font-size: 48px;
+  color: #fdd835;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+}
+
+.total-credits-container {
+  background-color: rgba(0, 0, 0, 0.85);
+  border: 2px solid #fdd835;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.total-credits-container span {
+  font-size: 24px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.total-credits {
+  font-size: 40px;
+  color: #00c853;
+  font-weight: bold;
+  display: inline-block;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px;
+  border: 2px solid #fdd835;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-header h2 {
+  color: #fdd835;
+  font-size: 24px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.connected {
+  background-color: green;
+  color: #ffffff;
+}
+
+.disconnected {
+  background-color: red;
+  color: #ffffff;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fdd835;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.credits {
+  font-size: 48px;
+  color: #fdd835;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.animation {
+  font-size: 48px;
+  color: #00c853;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.games {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.game {
+  background-color: rgba(183, 28, 28, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el mensaje de ganador */
+.winner-message {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000cc;
+  color: #fdd835;
+  padding: 30px;
+  border: 2px solid #fdd835;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.winner-message h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+.winner-message h2 {
+  font-size: 36px;
+  color: #00c853;
+  text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.7);
+}
